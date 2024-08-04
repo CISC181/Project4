@@ -66,3 +66,28 @@ for (let index2 in arr) {
 }
 
 //------- This will not compile           console.log(index2); //Compiler Error: Cannot find index2
+
+
+//  While Loop
+//  This loop will execute as long as the condition is true
+//  condition Checked BEFORE the loop's iteration
+//  NO guarentee that the loop will execute once 
+console.log("* Loop 7:  ***************************************************");
+let i: number = 2;
+while (i < 4) {
+    console.log( "Block statement execution no." + i )
+    i++;
+}
+
+
+//  Do While Loop
+//  This loop will execute as long as the condition is true
+//  condition Checked AFTER the loop's iteration
+//  Guarentee that the loop will execute once 
+
+console.log("* Loop 8:  ***************************************************");
+let j: number = 2;
+do {
+    console.log("Block statement execution no." + j )
+    j++;
+} while ( j < 4)

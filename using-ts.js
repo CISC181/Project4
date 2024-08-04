@@ -7,8 +7,8 @@ console.log("**************************************************************");
 //  Second Part:      Check this before each iteration
 //  Third Part:       Do this after each iteration
 console.log("* Loop 1:  ***************************************************");
-for (var i = 0; i < 3; i++) {
-    console.log("Block statement execution no." + i);
+for (var i_1 = 0; i_1 < 3; i_1++) {
+    console.log("Block statement execution no." + i_1);
 }
 //------- This will not compile           console.log('Value of i:' + i);
 console.log("* Loop 2:  ***************************************************");
@@ -51,3 +51,23 @@ for (var index2 in arr) {
     console.log(index2); // prints elements: 0, 1, 2, 3
 }
 //------- This will not compile           console.log(index2); //Compiler Error: Cannot find index2
+//  While Loop
+//  This loop will execute as long as the condition is true
+//  condition Checked BEFORE the loop's iteration
+//  NO guarentee that the loop will execute once 
+console.log("* Loop 7:  ***************************************************");
+var i = 2;
+while (i < 4) {
+    console.log("Block statement execution no." + i);
+    i++;
+}
+//  Do While Loop
+//  This loop will execute as long as the condition is true
+//  condition Checked AFTER the loop's iteration
+//  Guarentee that the loop will execute once 
+console.log("* Loop 8:  ***************************************************");
+var j = 2;
+do {
+    console.log("Block statement execution no." + j);
+    j++;
+} while (j < 4);
